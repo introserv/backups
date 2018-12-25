@@ -29,8 +29,6 @@ SMTP_PASSWD = "_____"
 #######################
 
 
-
-
 class EncryptionError(Exception):
     pass
 
@@ -43,7 +41,7 @@ def test_files_count(ftp):
     ls = list_ftp_dir(ftp)
     user_files = dict()
     for i in ls:
-        if i.endswith("."+BACKUPS_FILE_EXT):
+        if i.endswith("."+BACKUPS_FILE_EXT+".enc"):
             usr = i.split(".")[0]
             if user_files.get(usr) is None:
                 user_files[usr] = []
