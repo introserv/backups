@@ -8,7 +8,8 @@ curl -O https://raw.githubusercontent.com/introserv/backups/master/backup2ftp.py
 ```
 
 Сделать его исполняемым:<br>
-```chmod +x backup2ftp.py
+```
+chmod +x backup2ftp.py
 ```
 И настроить параметры в начале скрипта:<br>
 ```python
